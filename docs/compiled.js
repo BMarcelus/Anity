@@ -203,7 +203,7 @@ function GetDialogueData(game, levelName) {
 {text: "What are you doing to me? Why cant I move?", person: CHARACTERS.Kwak},
 {text: "Show me your secrets, Intruder", person: CHARACTERS.Psykei, sound: SOUNDS.portalNoise},
 {text: "ARG", person: CHARACTERS.Kwak, sound: SOUNDS.evilFlower},
-{text: "A source of magic yourself it seems. Yet you are not an Anity user", person: CHARACTERS.Kwak, sound: SOUNDS.evilFlower},
+{text: "A source of magic yourself it seems. Yet you are not an Anity user", person: CHARACTERS.Psykei},
 {text: "I'll be taking your little friend with me back to HQ", person: CHARACTERS.Psykei},
 {text: "And as for you, outsider,", person: CHARACTERS.Psykei},
 {waitFor:30, set: {mx:-1}, entity: "psykei"},
@@ -252,7 +252,7 @@ function GetDialogueData(game, levelName) {
   {text: "Please they took my friend", person: CHARACTERS.Kwak},
   {text: "Kidnapping? that doesn't sound like Anity...", person: CHARACTERS.Jabroski, sound: SOUNDS.chewing},
   {text: "Although, they have been doing some weird stuff lately. Ever since that guy showed up", person: CHARACTERS.Jabroski, sound: SOUNDS.chewing},
-  {text: "New guy? what does he look like?", person: CHARACTERS.Jabroski, sound: SOUNDS.chewing},
+  {text: "New guy? what does he look like?", person: CHARACTERS.Kwak},
   {text: "I didn't really get a good look at him. He was more like...", person: CHARACTERS.Jabroski, sound: SOUNDS.chewing},
   {text: "Like a presence?", person: CHARACTERS.Kwak},
   {text: "Yeah exactly", person: CHARACTERS.Jabroski, sound: SOUNDS.chewing},
@@ -588,6 +588,7 @@ class TextUI {
     canvas.font = this.fontsize + 'px Arial';
     var x = this.x;
     var y = this.y;
+    canvas.fillStyle = "white";
     canvas.fillText(this.text,x,y);
   }
 }
