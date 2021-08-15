@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- $head.html -->
+<link rel="stylesheet" href="./Assets/style.css">
+    <title>Anity-DEV</title>
+  </head>
+  <body>
+    <!-- $body.html -->
+<div class="webgl-content" id="canvas-wrapper">
+  <canvas id="gc"></canvas>
+  <div class="footer b-js-webgl-footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen b-js-fullscreen-btn"></div>
+    <div class="title">Game Jumpers: Sources of Anity</div>
+  </div>
+</div>    <script>
+      var DEV = true;
+    </script>
+    <!-- $scripts -->
+
+<script src='./js/Scenes/CurleyDialogueData.js?1567967308N'></script>
+<script src='./js/Scenes/Scene.js?1567967308N'></script>
+<script src='./js/Scenes/LoadingScene.js?1567967308N'></script>
+<script src='./js/Scenes/0MenuScene.js?1567967308N'></script>
+<script src='./js/Scenes/OpeningScene.js?1567967308N'></script>
+<script src='./js/Scenes/LevelEditorScene.js?1567967308N'></script>
+<script src='./js/Scenes/GameScene.js?1567967308N'></script>
+<script src='./js/Scenes/DialogueController.js?1567967308N'></script>
+<script src='./js/0lib/imageLoader.js?1567967308N'></script>
+<script src='./js/0lib/input/util.js?1567967308N'></script>
+<script src='./js/0lib/input/keys.js?1567967308N'></script>
+<script src='./js/0lib/input/gamepad.js?1567967308N'></script>
+<script src='./js/0lib/input/mouse.js?1567967308N'></script>
+<script src='./js/0lib/input/touch.js?1567967308N'></script>
+<script src='./js/0lib/input/input.js?1567967308N'></script>
+<script src='./js/0lib/sound.js?1567967308N'></script>
+<script src='./js/0lib/drm.js?1567967308N'></script>
+<script src='./js/0lib/canvas.js?1567967308N'></script>
+<script src='./js/0lib/fullscreen.js?1567967308N'></script>
+<script src='./js/LevelLoading/World.js?1567967308N'></script>
+<script src='./js/LevelLoading/LevelLoader.js?1567967308N'></script>
+<script src='./js/LevelLoading/Level.js?1567967308N'></script>
+<script src='./js/Models/0Model.js?1567967308N'></script>
+<script src='./js/Models/ChomperModel.js?1567967308N'></script>
+<script src='./js/Models/SunFlowerModel.js?1567967308N'></script>
+<script src='./js/Models/StickModel.js?1567967308N'></script>
+<script src='./js/Models/AnityModel.js?1567967308N'></script>
+<script src='./js/Models/PlatformerModel.js?1567967308N'></script>
+<script src='./js/Models/SirDanathonModel.js?1567967308N'></script>
+<script src='./js/Models/JabroskiModel.js?1567967308N'></script>
+<script src='./js/Models/DroneModel.js?1567967308N'></script>
+<script src='./js/Models/CurleyModel.js?1567967308N'></script>
+<script src='./js/Models/DarkGraySpikeModel.js?1567967308N'></script>
+<script src='./js/Models/PlayerModel.js?1567967308N'></script>
+<script src='./js/Models/Wobbly.js?1567967308N'></script>
+<script src='./js/Models/CheeseburgerJohnson.js?1567967308N'></script>
+<script src='./js/Models/Limb.js?1567967308N'></script>
+<script src='./js/Models/PsykeiModel.js?1567967308N'></script>
+<script src='./js/main.js?1567967308N'></script>
+<script src='./js/configs/inputConfig.js?1567967308N'></script>
+<script src='./js/configs/soundConfig.js?1567967308N'></script>
+<script src='./js/configs/imageConfig.js?1567967308N'></script>
+<script src='./js/configs/canvasSize.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Win.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/VentsEavesdrop2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Boss2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/PortalRoom.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Drones2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Dungeon.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/test.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/AnityEntrance.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Drawbridge.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/BossHall.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/VentsFall.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Lair.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/test2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/worldPan.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyCloset.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyAttack2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyStuck.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Lair2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyFallJump.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleySpikePit.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/reconciliation.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyShortJump.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/FlowerTrail.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyJump.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/VentsEntrance.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/FlowerTime.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Boss.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyStairs.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Cage.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Catapult.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/VentsEavesdrop1.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Dungeon2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/worldPan1.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Drawbridge2.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/ThroneRoom.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyHallway.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleySpikeFake.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Core.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/WakeUp.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/Drones.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyCongrats.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyAttack.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/TowerFall.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/BootPickup.ALEVEL.js?1567967308N'></script>
+<script src='./js/Levels/Generated/CurleyDoubleJump.ALEVEL.js?1567967308N'></script>
+<script src='./js/Entities/PortalEntity.js?1567967308N'></script>
+<script src='./js/Entities/Platformer.js?1567967308N'></script>
+<script src='./js/Entities/Curley.js?1567967308N'></script>
+<script src='./js/Entities/PlatformerDanathon.js?1567967308N'></script>
+<script src='./js/Entities/NPC.js?1567967308N'></script>
+<script src='./js/Entities/Sunflower.js?1567967308N'></script>
+<script src='./js/Entities/LightSource.js?1567967308N'></script>
+<script src='./js/Entities/Pickup.js?1567967308N'></script>
+<script src='./js/Entities/Player.js?1567967308N'></script>
+<script src='./js/Entities/Chomper.js?1567967308N'></script>
+<script src='./js/Entities/FakeSpikeTrigger.js?1567967308N'></script>
+<script src='./js/Entities/Psykei.js?1567967308N'></script>
+<script src='./js/Entities/0Drone.js?1567967308N'></script>
+<script src='./js/Entities/CheeseburgerJohnson.js?1567967308N'></script>
+<script src='./js/Entities/Jabroski.js?1567967308N'></script>
+<script src='./js/Entities/LaserBeam.js?1567967308N'></script>
+<script src='./js/Entities/Particle.js?1567967308N'></script>
+<script src='./js/Entities/Knight.js?1567967308N'></script>
+<script src='./js/Entities/DarkGraySpike.js?1567967308N'></script>
+    
+  </body>
+</html>
